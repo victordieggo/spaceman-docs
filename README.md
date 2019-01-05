@@ -147,7 +147,7 @@ The responsive visibility utilities allows you hide and show elements on specifi
 
 To hide an element on a specific breakpoint, you can use the classes  `hide-xs`, `hide-sm`, `hide-md`, `hide-lg` and `hide-xl`.
 
- | 480px | 600px | 840px | 960px | 1280px
+| | 480px | 600px | 840px | 960px | 1280px
 --- | --- | --- | --- | --- | ---
 hide-xs | | visible | visible | visible | visible
 hide-sm | | | visible | visible | visible
@@ -165,7 +165,7 @@ hide-xl | | | | |
 
 To show an element on a specific breakpoint, you can use the classes  `show-xs`, `show-sm`, `show-md`, `show-lg` and `show-xl`.
 
-| 480px | 600px | 840px | 960px | 1280px
+| | 480px | 600px | 840px | 960px | 1280px
 --- | --- | --- | --- | --- | ---
 show-xs | visible | | | |
 show-sm | visible | visible | | |
