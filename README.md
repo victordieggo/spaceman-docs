@@ -140,7 +140,44 @@ Section content goes here.
 Section content goes here.
 
 ### Responsive Visibility
-Section content goes here.
+
+The responsive visibility utilities allows you hide and show elements on specific breakpoints.
+
+#### Hiding elements
+
+To hide an element on a specific breakpoint, you can use the classes  `hide-xs`, `hide-sm`, `hide-md`, `hide-lg` and `hide-xl`.
+
+ | 480px | 600px | 840px | 960px | 1280px
+--- | --- | --- | --- | --- | ---
+hide-xs | | visible | visible | visible | visible
+hide-sm | | | visible | visible | visible
+hide-md | | | | visible | visible
+hide-lg | | | | | visible
+hide-xl | | | | |
+
+* `hide-xs` hides the element when the viewport width is smaller or equal to **480px**
+* `hide-sm` hides the element when the viewport width is smaller or equal to **600px**
+* `hide-md` hides the element when the viewport width is smaller or equal to **840px**
+* `hide-lg` hides the element when the viewport width is smaller or equal to **960px**
+* `hide-xl` hides the element when the viewport width is smaller or equal to **1280px**
+
+#### Showing elements
+
+To show an element on a specific breakpoint, you can use the classes  `show-xs`, `show-sm`, `show-md`, `show-lg` and `show-xl`.
+
+| 480px | 600px | 840px | 960px | 1280px
+--- | --- | --- | --- | --- | ---
+show-xs | visible | | | |
+show-sm | visible | visible | | |
+show-md | visible | visible | visible | |
+show-lg | visible | visible | visible | visible |
+show-xl | visible | visible | visible | visible | visible
+
+* `show-xs` shows the element when the viewport width is smaller or equal to **480px**
+* `show-sm` shows the element when the viewport width is smaller or equal to **600px**
+* `show-md` shows the element when the viewport width is smaller or equal to **840px**
+* `show-lg` shows the element when the viewport width is smaller or equal to **960px**
+* `show-xl` shows the element when the viewport width is smaller or equal to **1280px**
 
 ### Miscelaneos
 Section content goes here.
