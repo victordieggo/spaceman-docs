@@ -141,7 +141,7 @@ Section content goes here.
 
 ### Responsive Visibility
 
-The responsive visibility utilities allows you hide and show elements on specific breakpoints.
+The responsive visibility utilities allows you to hide and show elements on a specific [breakpoint](#breakpoints).
 
 #### Hiding elements
 
