@@ -10,7 +10,7 @@ v0.0.1
   * [Architecture](#architecture)
   * [Naming Pattern](#naming-pattern)
   * [Linters](#linters)
-* [Basics](#basics)
+* [Layout](#layout)
   * [Breakpoints](#breakpoints)
   * [Colors](#colors)
   * [Grid](#grid)
@@ -82,7 +82,7 @@ Section content goes here.
 ### Linters
 Section content goes here.
 
-## Basics
+## Layout
 
 ### Breakpoints
 Section content goes here.
