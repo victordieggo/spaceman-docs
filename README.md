@@ -10,7 +10,6 @@ v0.0.1
   * [Language](#language)
   * [Naming Pattern](#naming-pattern)
   * [Folder Structure](#folder-structure)
-  * [Linters](#linters)
 * [Layout](#layout)
   * [Breakpoints](#breakpoints)
   * [Colors](#colors)
@@ -181,9 +180,6 @@ Out of the box, you will see the following structure:
 In your projects, you can create any subdirectory (e.g. `pages/` or `themes/`) to organize your styles as long as you follow this same logic, otherwise your styles will not be included in the build process or it will break.
 
 #### Javascript
-Section content goes here.
-
-### Linters
 Section content goes here.
 
 ## Layout
