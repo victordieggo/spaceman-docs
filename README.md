@@ -315,11 +315,11 @@ hide-md | | | | visible | visible
 hide-lg | | | | | visible
 hide-xl | | | | |
 
-* `hide-xs` hides the element when the viewport width is smaller or equal to **480px**
-* `hide-sm` hides the element when the viewport width is smaller or equal to **600px**
-* `hide-md` hides the element when the viewport width is smaller or equal to **840px**
-* `hide-lg` hides the element when the viewport width is smaller or equal to **960px**
-* `hide-xl` hides the element when the viewport width is smaller or equal to **1280px**
+* `hide-xs` - hides the element when the viewport width is smaller or equal to **480px**
+* `hide-sm` - hides the element when the viewport width is smaller or equal to **600px**
+* `hide-md` - hides the element when the viewport width is smaller or equal to **840px**
+* `hide-lg` - hides the element when the viewport width is smaller or equal to **960px**
+* `hide-xl` - hides the element when the viewport width is smaller or equal to **1280px**
 
 #### Showing elements
 
@@ -333,11 +333,11 @@ show-md | visible | visible | visible | |
 show-lg | visible | visible | visible | visible |
 show-xl | visible | visible | visible | visible | visible
 
-* `show-xs` shows the element when the viewport width is smaller or equal to **480px**
-* `show-sm` shows the element when the viewport width is smaller or equal to **600px**
-* `show-md` shows the element when the viewport width is smaller or equal to **840px**
-* `show-lg` shows the element when the viewport width is smaller or equal to **960px**
-* `show-xl` shows the element when the viewport width is smaller or equal to **1280px**
+* `show-xs` - shows the element when the viewport width is smaller or equal to **480px**
+* `show-sm` - shows the element when the viewport width is smaller or equal to **600px**
+* `show-md` - shows the element when the viewport width is smaller or equal to **840px**
+* `show-lg` - shows the element when the viewport width is smaller or equal to **960px**
+* `show-xl` - shows the element when the viewport width is smaller or equal to **1280px**
 
 ### Miscelaneos
 Section content goes here.
