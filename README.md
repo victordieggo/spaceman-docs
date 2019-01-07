@@ -215,11 +215,11 @@ $breakpoints: (
 ```
 #### Media Query Mixins
 
-All the media queries are available via the mixin `media-breakpoint()`, wich uses as parameters the key defined in the `$breakpoints` variable (or a custom value) and the `min` or `max` keyword. Since Spaceman was built using a mobile first approach, the default value for the second parameter is `min`.
+All the media queries are available via the mixin `media-breakpoint()`, which uses as parameters the key defined in the `$breakpoints` variable (or a custom value) and the `min` or `max` keyword. Since Spaceman was built using a mobile first approach, the default value for the second parameter is `min`.
 
 #### Examples
 
-**1) Using the `media-breakpoint()` mixin with default values:**
+**1)** Using the `media-breakpoint()` mixin with default values:
 
 Source Code:
 ```css
@@ -239,7 +239,7 @@ CSS:
 }
 ```
 
-**2) Using the `media-breakpoint()` mixin with custom values:**
+**2)** Using the `media-breakpoint()` mixin with custom values:
 
 Source Code:
 ```css
