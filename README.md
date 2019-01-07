@@ -165,7 +165,20 @@ spaceman/
 └── ...
 ```
 #### Styles
-Section content goes here.
+
+Spaceman uses Sass and the SCSS syntax. Each subdirectory in the `assets/src/css` path has a `_module.scss` partial, which references all the styles in that same subdirectory. All the module partials are then referenced `main.scss` file in the root directory.
+
+Out of the box, you will see the following structure:
+
+* `base/` - contains global styles, such as resets, typography and grid
+* `components/` - contains each self-contained component in its own `.scss` partial
+* `config/` - contains all the global variables, such as colors, breakpoints and etc.
+* `layout/` - contains styling for larger layout components such as nav, header, footer, etc.
+* `utils/` - contains global mixins, functions and helper selectors
+* `vendor/` - contains any 3rd-party styles used in the project
+* `main.scss` - output file that brings together all styles
+
+In your projects, you can create any subdirectory (e.g. `pages/` or `themes/`) to organize your styles as long as you follow this same logic, otherwise your styles will not be included in the build process or it will break.
 
 #### Javascript
 Section content goes here.
