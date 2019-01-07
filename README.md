@@ -52,11 +52,11 @@ Opera | 12+
 
 ### Installation
 
-Spaceman uses [Gulp](http://gulpjs.com/) and [Browsersync](https://www.browsersync.io/), so you'll need [Node.JS](https://nodejs.org/en/). Once you have set it up, [download Spaceman](https://github.com/victordieggo/spaceman/releases/latest) to your project directory and access the terminal:
+Spaceman uses [Gulp](http://gulpjs.com/) as a build system, so you'll need [Node.JS](https://nodejs.org/en/) installed first. Once you have set it up, [download Spaceman](https://github.com/victordieggo/spaceman/releases/latest) to your project directory and access the bash/terminal/command line:
 
 ```
-# install gulp globally
-$ npm install -g gulp
+# install gulp command line utility
+$ npm install --global gulp-cli
 
 # go to your project directory
 $ cd myproject
@@ -64,11 +64,35 @@ $ cd myproject
 # install dev dependencies:
 $ npm install
 
-# initialize gulp and browsersync:
+# initialize gulp:
 $ gulp
 ```
 
 ### Build Process
+
+To summarize, the build process consists in:
+
+* Optimize images and SVGs
+* Compile, minify, autoprefix, and lint Sass
+* Compile, concatenate, minify, and lint JavaScript
+* Watch files for changes and automatically reload the browser
+
+#### JavaScript
+
+Make sure to put all the `.js` files in the `assets/src/js` path.
+
+Running the `gulp js` command will first lint all files using [ESLint](https://eslint.org/), except for the directories and files listend in the `.eslintrc` file at the root of the project. After that, everything but the `vendor/` directory will be compiled using [Babel](https://babeljs.io/). The compiled file will be concatenated with all other files and then minified. A production ready `main.js` file will be created in the `assets/dist/js` path.
+
+#### Sass
+Section content goes here.
+
+#### SVGs
+Section content goes here.
+
+#### Images
+Section content goes here.
+
+#### Build and Watch
 Section content goes here.
 
 ## Guidelines
@@ -177,7 +201,7 @@ All `.scss` files (except for the `vendor/` directory) will be linted before the
 
 ### JavaScript
 
-Spaceman uses [Babel](https://babeljs.io/) to compile ES6+ code into browser-compatible JavaScript. All `.js` files (including files in subdirectories) in the `assets/src/js` path will be compiled and linted using [ESLint](https://eslint.org/) except by the `vendor/`, `libs/` and `polyfill/` directories.
+Section content goes here. Spaceman uses [Babel](https://babeljs.io/) to compile ES6+ code into browser-compatible JavaScript. All `.js` files (including files in subdirectories) in the `assets/src/js` path will be compiled and linted using [ESLint](https://eslint.org/) except by the `vendor/`, `libs/` and `polyfill/` directories.
 
 ## Layout
 
