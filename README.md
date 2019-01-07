@@ -5,10 +5,11 @@ v0.0.1
   * [About Spaceman](#about-spaceman)
   * [Browser Support](#browser-support)
   * [Installation](#installation)
+  * [Build Process](#build-process)
 * [Guidelines](#guidelines)
   * [Language](#language)
-  * [Architecture](#architecture)
   * [Naming Pattern](#naming-pattern)
+  * [Folder Structure](#folder-structure)
   * [Linters](#linters)
 * [Layout](#layout)
   * [Breakpoints](#breakpoints)
@@ -68,15 +69,105 @@ $ npm install
 $ gulp
 ```
 
+### Build Process
+Section content goes here.
+
 ## Guidelines
 
 ### Language
 Section content goes here.
 
-### Architecture
+### Naming Pattern
 Section content goes here.
 
-### Naming Pattern
+### Folder Structure
+
+At first, the folder structure for your project will be exactly like the example below, it is important to keep this same structure so you don't break the Gulp build process:
+
+```
+spaceman/
+├── assets/
+│   ├── dist/
+│   │   ├── css/
+│   │   │   ├── main.css
+│   │   │   └── ...
+│   │   ├── img/
+│   │   │   ├── slide.jpg
+│   │   │   └── ...
+│   │   ├── js/
+│   │   │   ├── main.js
+│   │   │   └── ...
+│   │   └── svg/
+│   │       ├── icon-arrow-alt.svg
+│   │       ├── icon-arrow.svg
+│   │       ├── icon-check.svg
+│   │       ├── icon-close.svg
+│   │       └── icon-menu.svg
+│   │       └── ...
+|   └── src/
+|       ├── css/
+│       │   ├── base/
+│       │   │   ├── _grid.scss
+│       │   │   ├── _module.scss
+│       │   │   ├── _reset.scss
+│       │   │   ├── _typography.scss
+│       │   │   └── ...
+│       │   ├── components/
+│       │   │   ├── _buttons.scss
+│       │   │   ├── _form-elements.scss
+│       │   │   ├── _hero-image.scss
+│       │   │   ├── _module.scss
+│       │   │   └── ...
+│       │   ├── config/
+│       │   │   ├── _config.scss
+│       │   │   ├── _module.scss
+│       │   │   └── ...
+│       │   ├── layout/
+│       │   │   ├── _footer.scss
+│       │   │   ├── _header.scss
+│       │   │   ├── _module.scss
+│       │   │   ├── _navigation.scss
+│       │   │   └── ...
+│       │   ├── utils/
+│       │   │   ├── _functions.scss
+│       │   │   ├── _helpers.scss
+│       │   │   ├── _mixins.scss
+│       │   │   ├── _module.scss
+│       │   │   └── ...
+│       │   └── vendor/
+│       │       ├── _module.scss
+│       │       └── ...
+│       ├── img/
+│       │   ├── slide.jpg
+│       │   └── ...
+│       ├── js/
+│       │   ├── vendor/
+│       │   │   ├── vendor.js
+│       │   │   └── ...
+│       │   ├── navigation.js
+│       │   └── ...
+│       └── svg/
+│           ├── icon-arrow-alt.svg
+│           ├── icon-arrow.svg
+│           ├── icon-check.svg
+│           ├── icon-close.svg
+│           └── icon-menu.svg
+│           └── ...
+├── .eslintignore
+├── .eslintrc
+├── .gitignore
+├── .stylelintrc
+├── gulpfile.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── ...
+```
+#### Styles
+Section content goes here.
+
+#### Javascript
 Section content goes here.
 
 ### Linters
