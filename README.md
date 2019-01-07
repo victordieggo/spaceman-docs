@@ -179,6 +179,8 @@ Out of the box, you will see the following structure:
 
 In your projects, you can create any subdirectory (e.g. `pages/` or `themes/`) to organize your styles as long as you follow this same logic, otherwise your styles will not be included in the build process or it will break.
 
+All `.scss` files (except for the `vendor/` subdirectory) will be linted before the build process using [StyleLint](https://stylelint.io/). This enforces code style conventions and best practices for the project, prevent errors and make your styles easier to debug.
+
 #### JavaScript
 
 Spaceman uses [Babel](https://babeljs.io/) to compile ES6+ code into browser-compatible JavaScript. All `.js` files (including files in subdirectories) in the `assets/src/js` path will be compiled and linted using [ESLint](https://eslint.org/) except by the `vendor/`, `libs/` and `polyfill/` directories.
