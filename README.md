@@ -85,7 +85,8 @@ Section content goes here.
 ## Layout
 
 ### Breakpoints
-Section content goes here.
+
+Spaceman uses the following predefined breakpoints for layout, grid system, and components:
 
 Breakpoint | Syntax | Size
 --- | --- | ---
@@ -97,7 +98,42 @@ Extra Large | xl | 1280px
 
 #### Breakpoint Variables
 
+The predefined breakpoints can be overridden in the `_config.scss` partial, using the `$breakpoints` variable. For each breakpoint, a key and a value must be set:
+
+```css
+$breakpoints: (
+  xs: 480px,
+  sm: 600px,
+  md: 840px,
+  lg: 960px,
+  xl: 1280px
+);
+```
 #### Media Query Mixins
+
+All the media queries are available via the mixin `media-breakpoint()`, wich uses as parameters the key defined in the `$breakpoints` variable (or a custom value) and the `min` or `max` keyword. Since Spaceman was built using a mobile first approach, the default value for the second parameter is `min`.
+
+```css
+// Using the mixin with the default values...
+@include media-breakpoint(md) {
+  ...
+}
+
+// ...would generate the following media query:
+@media (min-width: 840px) {
+  ...
+}
+
+// Using the mixin with custom values...
+@include media-breakpoint(980px, max) {
+  ...
+}
+
+// ...would generate the following media query:
+@media (max-width: 980px) {
+  ...
+}
+```
 
 ### Colors
 Section content goes here.
