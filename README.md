@@ -159,7 +159,7 @@ spaceman/
 ```
 ### Styles
 
-Spaceman uses Sass and the SCSS syntax. Each subdirectory in the `assets/src/css` path has a `_module.scss` partial, which references all the styles in that same subdirectory. All the module partials are then referenced `main.scss` file in the root directory.
+Spaceman uses [Sass](https://sass-lang.com/) as a preprocessor and the SCSS syntax. Each subdirectory in the `assets/src/css` path has a `_module.scss` partial, which references all the styles in that same subdirectory. All the module partials are then referenced in the `main.scss` file in the root directory.
 
 Out of the box, you will see the following structure:
 
