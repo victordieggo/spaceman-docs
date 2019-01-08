@@ -72,6 +72,15 @@ spaceman/
 │   │       └── icon-menu.svg
 │   │       └── ...
 |   └── src/
+│       ├── img/
+│       │   ├── slide.jpg
+│       │   └── ...
+│       ├── js/
+│       │   ├── vendor/
+│       │   │   ├── vendor.js
+│       │   │   └── ...
+│       │   ├── navigation.js
+│       │   └── ...
 |       ├── sass/
 │       │   ├── base/
 │       │   │   ├── _grid.scss
@@ -104,15 +113,6 @@ spaceman/
 │       │   └── vendor/
 │       │       ├── _module.scss
 │       │       └── ...
-│       ├── img/
-│       │   ├── slide.jpg
-│       │   └── ...
-│       ├── js/
-│       │   ├── vendor/
-│       │   │   ├── vendor.js
-│       │   │   └── ...
-│       │   ├── navigation.js
-│       │   └── ...
 │       └── svg/
 │           ├── icon-arrow-alt.svg
 │           ├── icon-arrow.svg
