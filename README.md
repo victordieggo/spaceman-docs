@@ -161,7 +161,10 @@ To summarize, the build process consists in:
 
 #### JavaScript
 
-Running the `gulp js` command will first lint all files using [ESLint](https://eslint.org/), except for the directories and files listend in the `.eslintrc` file at the root of the project. After that, everything but the `vendor/` directory will be compiled using [Babel](https://babeljs.io/). The compiled file will be concatenated with all other files and then minified. A production ready `main.js` file will be created in the `assets/dist/js` path.
+The `gulp js` command will lint all `.js` files under the `assets/src/js` path using [ESLint](https://eslint.org/) and compile all ES6+ files through [Babel](https://babeljs.io/). The compiled file will be concatenated with the files in the subdirectories `libs/`, `polyfill/` and `vendor/`, which will generate the minified, production ready `main.js` file in the `assets/dist/js` path.
+
+To change or update the ESlint configuration or ignored paths and files, use the `.eslintrc` and `.eslintignore` files located in the root directory.
+
 
 #### Sass
 
@@ -177,11 +180,11 @@ Spaceman uses [Sass](https://sass-lang.com/) as a preprocessor and the SCSS synt
 
 Each directory in the `assets/src/css` path has a `_module.scss` partial, which references all the styles in that same directory. All the module partials are then referenced in the `main.scss` file in the root directory.
 
-Running the `gulp css` command will lint all `.scss` files with [StyleLint](https://stylelint.io/) and compile the Sass files. Vendor prefixes will be added to the compiled file with [Autoprefixer](https://autoprefixer.github.io/) and it will be optimized using [CSSO](https://github.com/css/csso). A production ready `main.css` file will be created in the `assets/dist/css` path.
+The `gulp css` command will lint all `.scss` files with [StyleLint](https://stylelint.io/) and compile the Sass files. Vendor prefixes will be added to the compiled file with [Autoprefixer](https://autoprefixer.github.io/) and it will be optimized using [CSSO](https://github.com/css/csso). A production ready `main.css` file will be created in the `assets/dist/css` path.
 
 #### SVGs
 
-Place all SVG files in the `assets/src/svg` path. These files will be optimized with [SVGO](https://github.com/svg/svgo) and compiled into `assets/dist/svg`.
+The `gulp svg` command will optimize all the SVG files located under the `assets/src/svg` path using [SVGO](https://github.com/svg/svgo). The optimized files will be available in the `assets/dist/svg` path.
 
 #### Images
 Section content goes here.
