@@ -157,11 +157,11 @@ Section content goes here.
 
 The `js` task will lint all `.js` files under the `assets/src/js` path using [ESLint](https://eslint.org/) and compile all ES6+ files through [Babel](https://babeljs.io/). The compiled file will be concatenated with the files in the subdirectories `libs/`, `polyfill/` and `vendor/`, which will generate the minified, production ready `main.js` file in the `assets/dist/js` path.
 
-To change or update the ESlint configuration or ignored paths and files, use the `.eslintrc` and `.eslintignore` files located in the root directory.
+To change or update the linter configuration or ignored paths and files, use the `.eslintrc` and `.eslintignore` files located in the root directory.
 
 #### Sass
 
-Spaceman uses [Sass](https://sass-lang.com/) as a preprocessor and the SCSS syntax. In the `assets/src/css` path, you will see the following structure:
+Spaceman uses [Sass](https://sass-lang.com/) as CSS preprocessor with the SCSS syntax. In the `assets/src/css` path you will see the following structure:
 
 * `base/` - contains global styles, such as resets, typography and grid
 * `components/` - contains each self-contained component in its own `.scss` partial
