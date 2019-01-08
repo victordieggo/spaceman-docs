@@ -72,7 +72,7 @@ spaceman/
 │   │       └── icon-menu.svg
 │   │       └── ...
 |   └── src/
-|       ├── css/
+|       ├── sass/
 │       │   ├── base/
 │       │   │   ├── _grid.scss
 │       │   │   ├── _module.scss
@@ -161,7 +161,7 @@ To change or update the linter configuration or ignored paths and files, use the
 
 #### Sass
 
-Spaceman uses [Sass](https://sass-lang.com/) as CSS preprocessor with the SCSS syntax. In the `assets/src/css` path you will see the following structure:
+Spaceman uses [Sass](https://sass-lang.com/) as CSS preprocessor with the SCSS syntax. In the `assets/src/sass` path you will see the following structure:
 
 * `base/` - contains global styles, such as resets, typography and grid
 * `components/` - contains each self-contained component in its own `.scss` partial
