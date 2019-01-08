@@ -297,7 +297,7 @@ Section content goes here.
 Utilities for controlling the display box type of an element.
 
 Class | Properties
---- | --- | ---
+--- | ---
 .block | display: block;
 .inline-block | display: inline-block;
 .inline | display: inline;
@@ -310,7 +310,7 @@ Class | Properties
 Utilities for controlling the wrapping of content around an element.
 
 Class | Properties
---- | --- | ---
+--- | ---
 .fleft | float: left;
 .fright | float: right;
 .fnone | float: none;
@@ -321,7 +321,7 @@ Class | Properties
 Utilities for controlling how an element is positioned in the DOM.
 
 Class | Properties
---- | --- | ---
+--- | ---
 .relative | position: relative;
 .absolute | position: absolute;
 .fixed | position: fixed;
