@@ -229,7 +229,7 @@ All the media queries are available via the mixin `media-breakpoint()`, which us
 
 **1)** Using the `media-breakpoint()` mixin with default values:
 
-Source Code:
+SASS:
 ```css
 @include media-breakpoint(md) {
   .element {
@@ -249,7 +249,7 @@ CSS:
 
 **2)** Using the `media-breakpoint()` mixin with custom values:
 
-Source Code:
+SASS:
 ```css
 @include media-breakpoint(980px, max) {
   .element {
