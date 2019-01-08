@@ -6,7 +6,7 @@ v0.0.1
   * [Browser Support](#browser-support)
   * [Folder Structure](#folder-structure)
   * [Installation](#installation)
-  * [Build Process](#build-process)
+  * [Gulp Tasks](#gulp-tasks)
 * [Layout](#layout)
   * [Breakpoints](#breakpoints)
   * [Colors](#colors)
@@ -49,7 +49,7 @@ Opera | 12+
 
 ### Folder Structure
 
-At first, the folder structure for your project will be exactly like the example below, it is important to keep this same structure so you don't break the [build process](#build-process):
+At first, the folder structure for your project will be exactly like the example below, it is important to keep this same structure so you don't break the [Gulp Tasks](#gulp-tasks):
 
 ```
 spaceman/
@@ -150,21 +150,14 @@ $ npm install
 $ gulp
 ```
 
-### Build Process
-
-To summarize, the build process consists in:
-
-* Optimize images and SVGs
-* Compile, minify, autoprefix, and lint Sass
-* Compile, concatenate, minify, and lint JavaScript
-* Watch files for changes and automatically reload the browser
+### Gulp Tasks
+Section content goes here.
 
 #### JavaScript
 
 The `gulp js` command will lint all `.js` files under the `assets/src/js` path using [ESLint](https://eslint.org/) and compile all ES6+ files through [Babel](https://babeljs.io/). The compiled file will be concatenated with the files in the subdirectories `libs/`, `polyfill/` and `vendor/`, which will generate the minified, production ready `main.js` file in the `assets/dist/js` path.
 
 To change or update the ESlint configuration or ignored paths and files, use the `.eslintrc` and `.eslintignore` files located in the root directory.
-
 
 #### Sass
 
