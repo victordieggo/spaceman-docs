@@ -327,10 +327,30 @@ Class | Properties
 .fixed | position: fixed;
 
 ### Z-index
-Section content goes here.
+
+Utilities for controlling the stack order of an element.
+
+Class | Properties
+--- | ---
+.z-index-1 | z-index: 1;
+.z-index-2 | z-index: 2;
+.z-index-3 | z-index: 3;
+.z-index-4 | z-index: 4;
+.z-index-5 | z-index: 5;
+.z-index-6 | z-index: 6;
 
 ### Sizing
-Section content goes here.
+
+Utilities for controlling the width and height of an element.
+
+Class | Properties
+--- | ---
+.auto-width | width: auto;
+.auto-height | height: auto;
+.full-width | width: 100%;
+.full-height | height: 100%;
+.full-size | width: 100%;<br/>height: 100%;
+.auto-size | width: auto;<br/>height: auto;
 
 ### Responsive Visibility
 
