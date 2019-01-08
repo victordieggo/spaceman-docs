@@ -49,7 +49,7 @@ Opera | 12+
 
 ### Folder Structure
 
-At first, the folder structure for your project will be exactly like the example below, it is important to keep this same structure so you don't break the Gulp build process:
+At first, the folder structure for your project will be exactly like the example below, it is important to keep this same structure so you don't break the [build process](#build-process):
 
 ```
 spaceman/
