@@ -182,7 +182,7 @@ Each subdirectory must have a `_module.scss` partial, which references all the s
 @import 'vendor/module';
 ```
 
-The `css` task will lint all `.scss` files with [StyleLint](https://stylelint.io/) and compile the Sass files. Vendor prefixes will be added to the compiled file with [Autoprefixer](https://autoprefixer.github.io/) and it will be optimized using [CSSO](https://github.com/css/csso). A production ready `main.css` file will be created in the `assets/dist/css` path.
+The `sass` task will lint all `.scss` files with [StyleLint](https://stylelint.io/) and compile the Sass files. Vendor prefixes will be added to the compiled file with [Autoprefixer](https://autoprefixer.github.io/) and it will be optimized using [CSSO](https://github.com/css/csso). A production ready `main.css` file will be created in the `assets/dist/css` path.
 
 #### SVGs
 
