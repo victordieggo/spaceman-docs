@@ -161,7 +161,7 @@ To change or update the ESlint configuration or ignored paths and files, use the
 
 #### Sass
 
-Spaceman uses [Sass](https://sass-lang.com/) as a preprocessor and the SCSS syntax. Out of the box, you will see the following structure:
+Spaceman uses [Sass](https://sass-lang.com/) as a preprocessor and the SCSS syntax. In the `assets/src/css` path, you will see the following structure:
 
 * `base/` - contains global styles, such as resets, typography and grid
 * `components/` - contains each self-contained component in its own `.scss` partial
@@ -171,7 +171,16 @@ Spaceman uses [Sass](https://sass-lang.com/) as a preprocessor and the SCSS synt
 * `vendor/` - contains any 3rd-party styles used in the project
 * `main.scss` - output file that brings together all styles
 
-Each directory in the `assets/src/css` path has a `_module.scss` partial, which references all the styles in that same directory. All the module partials are then referenced in the `main.scss` file in the root directory.
+Each subdirectory must have a `_module.scss` partial, which references all the styles in that same folder. These same partials are then referenced in the `main.scss` file:
+
+```css
+@import 'config/module';
+@import 'utils/module';
+@import 'base/module';
+@import 'components/module';
+@import 'layout/module';
+@import 'vendor/module';
+```
 
 The `gulp css` command will lint all `.scss` files with [StyleLint](https://stylelint.io/) and compile the Sass files. Vendor prefixes will be added to the compiled file with [Autoprefixer](https://autoprefixer.github.io/) and it will be optimized using [CSSO](https://github.com/css/csso). A production ready `main.css` file will be created in the `assets/dist/css` path.
 
