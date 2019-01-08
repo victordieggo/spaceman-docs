@@ -155,7 +155,7 @@ Section content goes here.
 
 #### JavaScript
 
-The `gulp js` command will lint all `.js` files under the `assets/src/js` path using [ESLint](https://eslint.org/) and compile all ES6+ files through [Babel](https://babeljs.io/). The compiled file will be concatenated with the files in the subdirectories `libs/`, `polyfill/` and `vendor/`, which will generate the minified, production ready `main.js` file in the `assets/dist/js` path.
+The `js` task will lint all `.js` files under the `assets/src/js` path using [ESLint](https://eslint.org/) and compile all ES6+ files through [Babel](https://babeljs.io/). The compiled file will be concatenated with the files in the subdirectories `libs/`, `polyfill/` and `vendor/`, which will generate the minified, production ready `main.js` file in the `assets/dist/js` path.
 
 To change or update the ESlint configuration or ignored paths and files, use the `.eslintrc` and `.eslintignore` files located in the root directory.
 
@@ -182,11 +182,11 @@ Each subdirectory must have a `_module.scss` partial, which references all the s
 @import 'vendor/module';
 ```
 
-The `gulp css` command will lint all `.scss` files with [StyleLint](https://stylelint.io/) and compile the Sass files. Vendor prefixes will be added to the compiled file with [Autoprefixer](https://autoprefixer.github.io/) and it will be optimized using [CSSO](https://github.com/css/csso). A production ready `main.css` file will be created in the `assets/dist/css` path.
+The `css` task will lint all `.scss` files with [StyleLint](https://stylelint.io/) and compile the Sass files. Vendor prefixes will be added to the compiled file with [Autoprefixer](https://autoprefixer.github.io/) and it will be optimized using [CSSO](https://github.com/css/csso). A production ready `main.css` file will be created in the `assets/dist/css` path.
 
 #### SVGs
 
-The `gulp svg` command will optimize all the SVG files located under the `assets/src/svg` path using [SVGO](https://github.com/svg/svgo). The optimized files will be available in the `assets/dist/svg` path.
+The `svg` task will optimize all the SVG files located under the `assets/src/svg` path using [SVGO](https://github.com/svg/svgo). The optimized files will be available in the `assets/dist/svg` path.
 
 #### Images
 Section content goes here.
