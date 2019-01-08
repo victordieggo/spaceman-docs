@@ -4,12 +4,9 @@ v0.0.1
 * [Getting Started](#getting-started)
   * [About Spaceman](#about-spaceman)
   * [Browser Support](#browser-support)
+  * [Folder Structure](#folder-structure)
   * [Installation](#installation)
   * [Build Process](#build-process)
-* [Guidelines](#guidelines)
-  * [Folder Structure](#folder-structure)
-  * [Styles](#styles)
-  * [JavaScript](#javascript)
 * [Layout](#layout)
   * [Breakpoints](#breakpoints)
   * [Colors](#colors)
@@ -49,53 +46,6 @@ Internet Explorer | 10+
 Firefox | 22+
 Safari | 6.1+
 Opera | 12+
-
-### Installation
-
-Spaceman uses [Gulp](http://gulpjs.com/) as a build system, so you'll need [Node.JS](https://nodejs.org/en/) installed first. Once you have set it up, [download Spaceman](https://github.com/victordieggo/spaceman/releases/latest) to your project directory and access the bash/terminal/command line:
-
-```
-# install gulp command line utility
-$ npm install --global gulp-cli
-
-# go to your project directory
-$ cd myproject
-
-# install dev dependencies:
-$ npm install
-
-# initialize gulp:
-$ gulp
-```
-
-### Build Process
-
-To summarize, the build process consists in:
-
-* Optimize images and SVGs
-* Compile, minify, autoprefix, and lint Sass
-* Compile, concatenate, minify, and lint JavaScript
-* Watch files for changes and automatically reload the browser
-
-#### JavaScript
-
-Make sure to put all the `.js` files in the `assets/src/js` path.
-
-Running the `gulp js` command will first lint all files using [ESLint](https://eslint.org/), except for the directories and files listend in the `.eslintrc` file at the root of the project. After that, everything but the `vendor/` directory will be compiled using [Babel](https://babeljs.io/). The compiled file will be concatenated with all other files and then minified. A production ready `main.js` file will be created in the `assets/dist/js` path.
-
-#### Sass
-Section content goes here.
-
-#### SVGs
-Section content goes here.
-
-#### Images
-Section content goes here.
-
-#### Build and Watch
-Section content goes here.
-
-## Guidelines
 
 ### Folder Structure
 
@@ -181,11 +131,41 @@ spaceman/
 ├── README.md
 └── ...
 ```
-### Styles
 
-Spaceman uses [Sass](https://sass-lang.com/) as a preprocessor and the SCSS syntax. Each subdirectory in the `assets/src/css` path has a `_module.scss` partial, which references all the styles in that same subdirectory. All the module partials are then referenced in the `main.scss` file in the root directory.
+### Installation
 
-Out of the box, you will see the following structure:
+Spaceman uses [Gulp](http://gulpjs.com/) as a build system, so you'll need [Node.JS](https://nodejs.org/en/) installed first. Once you have set it up, [download Spaceman](https://github.com/victordieggo/spaceman/releases/latest) to your project directory and access the bash/terminal/command line:
+
+```
+# install gulp command line utility
+$ npm install --global gulp-cli
+
+# go to your project directory
+$ cd myproject
+
+# install dev dependencies:
+$ npm install
+
+# initialize gulp:
+$ gulp
+```
+
+### Build Process
+
+To summarize, the build process consists in:
+
+* Optimize images and SVGs
+* Compile, minify, autoprefix, and lint Sass
+* Compile, concatenate, minify, and lint JavaScript
+* Watch files for changes and automatically reload the browser
+
+#### JavaScript
+
+Running the `gulp js` command will first lint all files using [ESLint](https://eslint.org/), except for the directories and files listend in the `.eslintrc` file at the root of the project. After that, everything but the `vendor/` directory will be compiled using [Babel](https://babeljs.io/). The compiled file will be concatenated with all other files and then minified. A production ready `main.js` file will be created in the `assets/dist/js` path.
+
+#### Sass
+
+Spaceman uses [Sass](https://sass-lang.com/) as a preprocessor and the SCSS syntax. Out of the box, you will see the following structure:
 
 * `base/` - contains global styles, such as resets, typography and grid
 * `components/` - contains each self-contained component in its own `.scss` partial
@@ -195,13 +175,19 @@ Out of the box, you will see the following structure:
 * `vendor/` - contains any 3rd-party styles used in the project
 * `main.scss` - output file that brings together all styles
 
-In your projects, you can create any subdirectory (e.g. `pages/` or `themes/`) to organize your styles as long as you follow this same logic, otherwise your styles will not be included in the build process or it will break.
+Each directory in the `assets/src/css` path has a `_module.scss` partial, which references all the styles in that same directory. All the module partials are then referenced in the `main.scss` file in the root directory.
 
-All `.scss` files (except for the `vendor/` directory) will be linted before the build process using [StyleLint](https://stylelint.io/). This enforces code style conventions and best practices for the project, prevent errors and make your styles easier to debug.
+Running the `gulp css` command will lint all `.scss` files with [StyleLint](https://stylelint.io/) and compile the Sass files. Vendor prefixes will be added to the compiled file with [Autoprefixer](https://autoprefixer.github.io/) and it will be optimized using [CSSO](https://github.com/css/csso). A production ready `main.css` file will be created in the `assets/dist/css` path.
 
-### JavaScript
+#### SVGs
 
-Section content goes here. Spaceman uses [Babel](https://babeljs.io/) to compile ES6+ code into browser-compatible JavaScript. All `.js` files (including files in subdirectories) in the `assets/src/js` path will be compiled and linted using [ESLint](https://eslint.org/) except by the `vendor/`, `libs/` and `polyfill/` directories.
+Place all SVG files in the `assets/src/svg` path. These files will be optimized with [SVGO](https://github.com/svg/svgo) and compiled into `assets/dist/svg`.
+
+#### Images
+Section content goes here.
+
+#### Build and Watch
+Section content goes here.
 
 ## Layout
 
