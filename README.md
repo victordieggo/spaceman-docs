@@ -189,7 +189,8 @@ The `css` task will lint all `.scss` files with [StyleLint](https://stylelint.io
 The `svg` task will optimize all the SVG files located under the `assets/src/svg` path using [SVGO](https://github.com/svg/svgo). The optimized files will be available in the `assets/dist/svg` path.
 
 #### Images
-Section content goes here.
+
+The `img` task will optimize all the image files (gif/jpeg/png) located under the `assets/src/img` path using [Imagemin](https://github.com/sindresorhus/gulp-imagemin). The optimized files will be available in the `assets/dist/img` path.
 
 #### Build and Watch
 Section content goes here.
