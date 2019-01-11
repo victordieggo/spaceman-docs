@@ -68,7 +68,7 @@ $ gulp
 
 ### Contents
 
-Once downloaded and unziped, the folder structure you'll see will be exactly like the example below: this is the basic structure for starting your web projects using Spaceman. It provides compiled and minified CSS and JS files, as well as they source code, a [starter template](#starter-template) and all the [build tools](#build-tools) you'll need along the way.
+Once downloaded and unziped, the folder structure you'll see will be exactly like the example below: this is the basic structure for starting your web projects using Spaceman. It provides compiled and minified CSS and JS files, as well as their source code, a [starter template](#starter-template) and all the [build tools](#build-tools) you'll need along the way.
 
 ```
 spaceman/
