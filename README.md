@@ -4,9 +4,10 @@ v0.0.1
 * [Getting Started](#getting-started)
   * [About Spaceman](#about-spaceman)
   * [Browser Support](#browser-support)
-  * [Folder Structure](#folder-structure)
   * [Installation](#installation)
-  * [Gulp Tasks](#gulp-tasks)
+  * [Contents](#contents)
+  * [Starter Template](#starter-template)
+  * [Build Tools](#build-tools)
 * [Layout](#layout)
   * [Breakpoints](#breakpoints)
   * [Colors](#colors)
@@ -47,9 +48,27 @@ Firefox | 22+
 Safari | 6.1+
 Opera | 12+
 
-### Folder Structure
+### Installation
 
-At first, the folder structure for your project will be exactly like the example below, it is important to keep this same structure so you don't break the [Gulp Tasks](#gulp-tasks):
+[Download Spaceman](https://github.com/victordieggo/spaceman/releases/latest) and unzip all files into the root directory of your project. The build system is based on [Gulp](#build-tools), so so you'll need [Node.JS](https://nodejs.org/en/) installed first. Once you have set it up, access the bash/terminal/command line:
+
+```
+# install gulp command line utility
+$ npm install --global gulp-cli
+
+# go to your project directory
+$ cd myproject
+
+# install dev dependencies:
+$ npm install
+
+# initialize gulp:
+$ gulp
+```
+
+### Contents
+
+Once downloaded and unziped, the folder structure you'll see will be exactly like the example below: this is the basic structure for starting your web projects using Spaceman. It provides compiled and minified CSS and JS files, as well as they source code, a [starter template](#starter-template) and all the [build tools](#build-tools) you'll need along the way.
 
 ```
 spaceman/
@@ -138,36 +157,27 @@ spaceman/
 └── ...
 ```
 
-### Installation
-
-Spaceman uses [Gulp](http://gulpjs.com/) as a build system, so you'll need [Node.JS](https://nodejs.org/en/) installed first. Once you have set it up, [download Spaceman](https://github.com/victordieggo/spaceman/releases/latest) to your project directory and access the bash/terminal/command line:
-
-```
-# install gulp command line utility
-$ npm install --global gulp-cli
-
-# go to your project directory
-$ cd myproject
-
-# install dev dependencies:
-$ npm install
-
-# initialize gulp:
-$ gulp
-```
-
-### Gulp Tasks
+### Starter Template
 Section content goes here.
+
+### Build Tools
+
+Spaceman uses [Gulp](http://gulpjs.com/) for its build system, alongside with [Babel](https://babeljs.io/) to compile ES6+ code and [BrowserSync](https://www.browsersync.io/) to watch files. To summarize, the `gulpfile.js` located in the project root does the following tasks:
+
+* Compile, concatenate, minify, and lint JavaScript
+* Compile, minify, autoprefix and lint Sass
+* Optimize SVGs and images
+* Watch files for changes, rebuild and reload browsers
 
 #### JavaScript
 
-The `js` task will lint all `.js` files under the `assets/src/js` path using [ESLint](https://eslint.org/) and compile all ES6+ files through [Babel](https://babeljs.io/). The compiled file will be concatenated with the files in the subdirectories `libs/`, `polyfill/` and `vendor/`, which will generate the minified, production ready `main.js` file in the `assets/dist/js` path.
+Gulp will lint all `.js` files under the `assets/src/js/` path using [ESLint](https://eslint.org/) and compile all ES6+ files through [Babel](https://babeljs.io/). The compiled file will be concatenated with the files in the subdirectories `libs/`, `polyfill/` and `vendor/`, which will generate the minified, production ready `main.js` file in the `assets/dist/js/` path.
 
 To change or update the linter configuration or ignored paths and files, use the `.eslintrc` and `.eslintignore` files located in the root directory.
 
 #### Sass
 
-Spaceman uses [Sass](https://sass-lang.com/) as CSS preprocessor with the SCSS syntax. In the `assets/src/sass` path you will see the following structure:
+Spaceman uses [Sass](https://sass-lang.com/) as CSS preprocessor with the SCSS syntax. In the `assets/src/sass/` path you will see the following structure:
 
 * `base/` - contains global styles, such as resets, typography and grid
 * `components/` - contains each self-contained component in its own `.scss` partial
@@ -188,15 +198,13 @@ Each subdirectory must have a `_module.scss` partial, which references all the s
 @import 'vendor/module';
 ```
 
-The `sass` task will lint all `.scss` files with [StyleLint](https://stylelint.io/) and compile the Sass files. Vendor prefixes will be added to the compiled file with [Autoprefixer](https://autoprefixer.github.io/) and it will be optimized using [CSSO](https://github.com/css/csso). A production ready `main.css` file will be created in the `assets/dist/css` path.
+Gulp will lint all `.scss` files with [StyleLint](https://stylelint.io/) and compile Sass to CSS. Vendor prefixes will be added to the compiled file with [Autoprefixer](https://autoprefixer.github.io/) and it will be optimized using [cssnano](https://cssnano.co/), which will generate the minified, production ready `main.css` file in the `assets/dist/css/` path.
 
-#### SVGs
+To change or update the linter configuration, use the `.stylelintrc` file located in the root directory.
 
-The `svg` task will optimize all the SVG files located under the `assets/src/svg` path using [SVGO](https://github.com/svg/svgo). The optimized files will be available in the `assets/dist/svg` path.
+#### Images and SVGs
 
-#### Images
-
-The `img` task will optimize all the image files (gif/jpeg/png) located under the `assets/src/img` path using [Imagemin](https://github.com/sindresorhus/gulp-imagemin). The optimized files will be available in the `assets/dist/img` path.
+All images and SVGs located under the directories `assets/src/img/` and `assets/src/svg/` will be optimized using [imagemin](https://github.com/sindresorhus/gulp-imagemin). The optimized files will be available in `assets/dist/img/` and `assets/dist/svg/` respectively.
 
 #### Build and Watch
 Section content goes here.
