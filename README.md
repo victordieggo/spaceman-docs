@@ -372,9 +372,9 @@ Class | Properties
 
 The responsive visibility utilities allows you to hide and show elements on a specific [breakpoint](#breakpoints).
 
-#### Hiding elements
+#### Hiding Elements
 
-Use the following classes to **hide** an element on a specific breakpoint:
+Use the following classes to hide an element on a specific breakpoint:
 
 | | 480px | 600px | 840px | 960px | 1280px
 --- | --- | --- | --- | --- | ---
@@ -390,9 +390,9 @@ Use the following classes to **hide** an element on a specific breakpoint:
 * `.hide-lg` - hides the element when the viewport width is smaller or equal to **960px**
 * `.hide-xl` - hides the element when the viewport width is smaller or equal to **1280px**
 
-#### Showing elements
+#### Showing Elements
 
-Use the following classes to **show** an element on a specific breakpoint:
+Use the following classes to show an element on a specific breakpoint:
 
 | | 480px | 600px | 840px | 960px | 1280px
 --- | --- | --- | --- | --- | ---
