@@ -1,5 +1,6 @@
 # Spaceman Docs
-v0.0.1
+
+## Summary
 
 * [Getting Started](#getting-started)
   * [About Spaceman](#about-spaceman)
