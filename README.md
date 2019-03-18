@@ -34,7 +34,7 @@
 
 Spaceman is a simple and easily customizable HTML/CSS boilerplate to build websites and apps. It provides a flexbox based responsive layout system, pre-set styles for basic UI elements and a few CSS utilities and components.
 
-It was designed and built not to be used as a component or a framework, but as a solid and stable base for you to costumize and build your projects upon.
+It was designed and built not to be used as a component or a framework, but as a solid and stable starting point for you to costumize and build your web projects upon.
 
 ### Browser Support
 
