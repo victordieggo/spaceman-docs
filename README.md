@@ -178,7 +178,7 @@ To change or update the linter configuration or ignored paths and files, use the
 
 #### Sass
 
-Spaceman uses [Sass](https://sass-lang.com/) as CSS preprocessor with the SCSS syntax. In the `assets/src/sass/` path you will see the following structure:
+Spaceman uses [Sass](https://sass-lang.com/) as CSS preprocessor with the SCSS syntax and the [SUIT CSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) naming conventions. In the `assets/src/sass/` path you will see the following structure:
 
 * `base/` - contains global styles, such as resets, typography and grid
 * `components/` - contains each self-contained component in its own `.scss` partial
