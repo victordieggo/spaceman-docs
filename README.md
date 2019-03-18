@@ -19,6 +19,7 @@
   * [Buttons](#buttons)
   * [Form Elements](#form-elements)
   * [Hero Image](#hero-image)
+  * [Navbar](#navbar)
 * [Utilities](#utilities)
   * [Display](#display)
   * [Floating](#floating)
@@ -304,6 +305,9 @@ Section content goes here.
 Section content goes here.
 
 ### Hero Image
+Section content goes here.
+
+### Navbar
 Section content goes here.
 
 ## Utilities
