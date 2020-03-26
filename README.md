@@ -312,18 +312,20 @@ Section content goes here.
 
 ## Utilities
 
+All utility classes are identified by the the prefix `.u-`, follwing the [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md#u-utilityName).
+
 ### Display
 
 Utilities for controlling the display box type of an element.
 
 Class | Properties
 --- | ---
-.block | display: block;
-.inline-block | display: inline-block;
-.inline | display: inline;
-.table | display: table;
-.table-cell | display: table-cell;
-.flex | display: flex;
+.u-block | display: block;
+.u-inlineBlock | display: inline-block;
+.u-inline | display: inline;
+.u-table | display: table;
+.u-tableCell | display: table-cell;
+.u-flex | display: flex;
 
 ### Floating
 
@@ -331,10 +333,10 @@ Utilities for controlling the wrapping of content around an element.
 
 Class | Properties
 --- | ---
-.fleft | float: left;
-.fright | float: right;
-.fnone | float: none;
-.clear | clear: both;
+.u-fleft | float: left;
+.u-fright | float: right;
+.u-fnone | float: none;
+.u-clear | clear: both;
 
 ### Position
 
@@ -342,9 +344,9 @@ Utilities for controlling how an element is positioned in the DOM.
 
 Class | Properties
 --- | ---
-.relative | position: relative;
-.absolute | position: absolute;
-.fixed | position: fixed;
+.u-relative | position: relative;
+.u-absolute | position: absolute;
+.u-fixed | position: fixed;
 
 ### Z-index
 
@@ -352,12 +354,12 @@ Utilities for controlling the stack order of an element.
 
 Class | Properties
 --- | ---
-.z-index-1 | z-index: 1;
-.z-index-2 | z-index: 2;
-.z-index-3 | z-index: 3;
-.z-index-4 | z-index: 4;
-.z-index-5 | z-index: 5;
-.z-index-6 | z-index: 6;
+.u-zIndex-1 | z-index: 1;
+.u-zIndex-2 | z-index: 2;
+.u-zIndex-3 | z-index: 3;
+.u-zIndex-4 | z-index: 4;
+.u-zIndex-5 | z-index: 5;
+.u-zIndex-6 | z-index: 6;
 
 ### Sizing
 
@@ -365,12 +367,12 @@ Utilities for controlling the width and height of an element.
 
 Class | Properties
 --- | ---
-.auto-width | width: auto;
-.auto-height | height: auto;
-.full-width | width: 100%;
-.full-height | height: 100%;
-.full-size | width: 100%;<br/>height: 100%;
-.auto-size | width: auto;<br/>height: auto;
+.u-autoWidth | width: auto;
+.u-autoHeight | height: auto;
+.u-fullWidth | width: 100%;
+.u-fullHeight | height: 100%;
+.u-fullSize | width: 100%;<br/>height: 100%;
+.u-autoSize | width: auto;<br/>height: auto;
 
 ### Responsive Visibility
 
@@ -382,17 +384,17 @@ Use the following classes to hide an element on a specific breakpoint:
 
 | | 480px | 600px | 840px | 960px | 1280px
 --- | --- | --- | --- | --- | ---
-.hide-xs | | visible | visible | visible | visible
-.hide-sm | | | visible | visible | visible
-.hide-md | | | | visible | visible
-.hide-lg | | | | | visible
-.hide-xl | | | | |
+.u-xs-hide | | visible | visible | visible | visible
+.u-sm-hide | | | visible | visible | visible
+.u-md-hide | | | | visible | visible
+.u-lg-hide | | | | | visible
+.u-xl-hide | | | | |
 
-* `.hide-xs` - hides the element when the viewport width is smaller or equal to **480px**
-* `.hide-sm` - hides the element when the viewport width is smaller or equal to **600px**
-* `.hide-md` - hides the element when the viewport width is smaller or equal to **840px**
-* `.hide-lg` - hides the element when the viewport width is smaller or equal to **960px**
-* `.hide-xl` - hides the element when the viewport width is smaller or equal to **1280px**
+* `.u-xs-hide` - hides the element when the viewport width is smaller or equal to **480px**
+* `.u-sm-hide` - hides the element when the viewport width is smaller or equal to **600px**
+* `.u-md-hide` - hides the element when the viewport width is smaller or equal to **840px**
+* `.u-lg-hide` - hides the element when the viewport width is smaller or equal to **960px**
+* `.u-xl-hide` - hides the element when the viewport width is smaller or equal to **1280px**
 
 #### Showing Elements
 
@@ -400,17 +402,17 @@ Use the following classes to show an element on a specific breakpoint:
 
 | | 480px | 600px | 840px | 960px | 1280px
 --- | --- | --- | --- | --- | ---
-.show-xs | visible | | | |
-.show-sm | visible | visible | | |
-.show-md | visible | visible | visible | |
-.show-lg | visible | visible | visible | visible |
-.show-xl | visible | visible | visible | visible | visible
+.u-xs-show | visible | | | |
+.u-sm-show | visible | visible | | |
+.u-md-show | visible | visible | visible | |
+.u-lg-show | visible | visible | visible | visible |
+.u-xl-show | visible | visible | visible | visible | visible
 
-* `.show-xs` - shows the element when the viewport width is smaller or equal to **480px**
-* `.show-sm` - shows the element when the viewport width is smaller or equal to **600px**
-* `.show-md` - shows the element when the viewport width is smaller or equal to **840px**
-* `.show-lg` - shows the element when the viewport width is smaller or equal to **960px**
-* `.show-xl` - shows the element when the viewport width is smaller or equal to **1280px**
+* `.u-xs-show` - shows the element when the viewport width is smaller or equal to **480px**
+* `.u-sm-show` - shows the element when the viewport width is smaller or equal to **600px**
+* `.u-md-show` - shows the element when the viewport width is smaller or equal to **840px**
+* `.u-lg-show` - shows the element when the viewport width is smaller or equal to **960px**
+* `.u-xl-show` - shows the element when the viewport width is smaller or equal to **1280px**
 
 ### Miscelaneos
 Section content goes here.
